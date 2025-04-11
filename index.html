@@ -253,7 +253,7 @@ p
     <div class="confetti-container">
     </div>
 
-    <div class="birthday-container">
+    <div class="birthday-container"  id="birthday-container">
 
         <p>
         <div class="birthdayname">
@@ -343,6 +343,13 @@ const starsContainer = document.getElementById('stars');
             starsContainer.appendChild(star);
         }
 
+
+        function setZoom(zoomLevel) {
+  document.body.getElementById('birthday-container').style.zoom = zoomLevel;
+}
+
+// To set the zoom level to 50%
+window.onload=function(){ setZoom('50%');};
 
 </script>
 
